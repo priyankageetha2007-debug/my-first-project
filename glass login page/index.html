@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliding Login & Register</title>
+  <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+
+  <div class="container" id="container">
+    
+    <!-- REGISTER FORM (இடது பக்கம் இருக்கும்) -->
+    <div class="form-container register-container">
+      <form action="#">
+        <h1>Registration</h1>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="main-btn">Sign Up</button>
+      </form>
+    </div>
+
+    <!-- LOGIN FORM (வலது பக்கம் இருக்கும்) -->
+    <div class="form-container login-container">
+      <form action="#">
+        <h1>Login</h1>
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+        <a href="#" class="forgot">Forgot password?</a>
+        <button type="submit" class="main-btn">Login</button>
+      </form>
+    </div>
+
+    <!-- SLIDING OVERLAY (நகரும் நீல நிற பகுதி) -->
+    <div class="overlay-container">
+      <div class="overlay">
+        <!-- இடது பக்கம் இருக்கும் போது காட்டும் டெக்ஸ்ட் -->
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>Already have an account?</p>
+          <button class="ghost-btn" id="loginBtn">Login</button>
+        </div>
+        <!-- வலது பக்கம் இருக்கும் போது காட்டும் டெக்ஸ்ட் -->
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Welcome!</h1>
+          <p>Don't have an account?</p>
+          <button class="ghost-btn" id="registerBtn">Register</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript லிங்க் -->
+  <script src="script.js"></script>
+</body>
+</html>
